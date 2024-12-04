@@ -6,6 +6,10 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
+variable "ec2_name" {
+  type = list(string)
+}
+
 variable "region" {
   default = "us-west-1"
 }

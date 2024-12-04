@@ -1,9 +1,9 @@
 resource "aws_instance" "server" {
-  count         = 4
+  count         = length(var.ec2_name)
   ami           = var.ami_id
   instance_type = var.instance_type
 
   tags = {
-    Name = "alex-server${count.index + 1}"
+    Name = var.ec2_name[count.index]
   }
 }

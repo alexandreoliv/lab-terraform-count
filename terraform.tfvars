@@ -1,0 +1,1 @@
+ec2_name = ["alex-vm1", "alex-vm2", "alex-vm3"]
